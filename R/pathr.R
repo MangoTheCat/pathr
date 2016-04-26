@@ -71,9 +71,6 @@ path_dirname <- function(path) {
 ##' path_exists(c('/tmp/foobar', tempdir(), NA))
 
 path_exists <- function(paths) {
-  ## TODO: na.action
-  ##       - omit
-  ##       - error
   if (is.null(paths)) {
     stop("invalid 'file' argument")
   }
